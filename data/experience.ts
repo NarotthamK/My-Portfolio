@@ -10,7 +10,7 @@ export const data: {
     workExperience: [
       {
         companyName: "Dell Technologies",
-        companyLogo: "/delltechnologies.png",
+        companyLogo: "/Delltechnologies.png",
         position: "Software Engineer",
         startDate: "2021-09",
         endDate: "2023-08",

@@ -105,32 +105,29 @@ export function ExperienceSkills({ experiences, skills, certificates }: Props) {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-              {certificates.map((certificate, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center text-center"
-                >
-                  <a
-                    href={certificate?.url || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={certificate?.title || "Certificate"}
-                    className="block transition-transform hover:scale-105"
-                  >
-                    <Image
-                      src={certificate?.image || "/fallback.png"}
-                      alt={certificate?.title || "Certificate"}
-                      width={1280}
-                      height={720}
-                      className="w-full h-[250px] md:h-[300px] lg:h-[350px] rounded-lg object-cover shadow-lg"
-                    />
-                  </a>
-                  <p className="mt-3 text-lg font-semibold text-white">
-                    {certificate?.title || "Certificate"}
-                  </p>
-                </div>
-              ))}
-            </div>
+  {certificates.map((certificate, index) => (
+    <a
+      key={index}
+      href={certificate?.url || "#"}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={certificate?.title || "Certificate"}
+      className="flex flex-col items-center text-center transition-transform hover:scale-105"
+    >
+      <Image
+        src={certificate?.image || "/fallback.png"}
+        alt={certificate?.title || "Certificate"}
+        width={1280}
+        height={720}
+        className="w-full h-auto max-h-[350px] rounded-lg object-contain bg-white/5 p-2 shadow-lg"
+      />
+      <p className="mt-3 text-lg font-semibold text-white hover:text-blue-400">
+        {certificate?.title || "Certificate"}
+      </p>
+    </a>
+  ))}
+</div>
+
           )}
         </MotionUp>
       </Container>

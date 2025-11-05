@@ -41,15 +41,15 @@ export function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-gray-300 focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          ☰
-        </button>
+  className="md:hidden text-gray-300 text-3xl focus:outline-none"
+  onClick={() => setIsOpen(!isOpen)}
+>
+  ☰
+</button>
       </div>
 
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center bg-black/90 space-y-4 py-4 border-t border-gray-700">
+       <div className="md:hidden flex flex-col items-center bg-black/95 space-y-6 py-6 border-t border-gray-700">
           {navLinks.map((link) => (
             <a
               key={link.title}

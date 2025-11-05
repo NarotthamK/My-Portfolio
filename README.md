@@ -3,6 +3,11 @@
 Welcome to my personal portfolio! This website showcases my projects, experience, and skills as a Fullstack Developer. Built with **Next.js, React, Tailwind CSS, and TypeScript**, it demonstrates modern web development practices, responsive design, and interactive UI components.
 
 
+## 🌐 Live Demo
+Check out the live site: [Visit my portfolio](https://my-portfolio1901.vercel.app)
+
+
+
 ## 🛠️ Tech Stack
 - **Frontend:** Next.js, React, Tailwind CSS, TypeScript  
 - **Backend:** Node.js (API routes for contact form)  
