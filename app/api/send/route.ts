@@ -16,7 +16,7 @@ export async function POST(req: Request) {
     // Send email to YOU (admin)
     await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>", // can be customized
-      to: "sainaveen1901@gmail.com", // ← replace with your email
+      to: "narotthamk@gmail.com", // ← replace with your email
       subject: `New message from ${name}: ${subject}`,
       react: EmailTemplateForAdmin({ name, email, subject, message }),
     });

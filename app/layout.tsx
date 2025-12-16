@@ -21,10 +21,11 @@ export const metadata: Metadata = {
       },
     ],
   },
-  title: "Naveen Sai Alapati | Full Stack Developer | JPMC | Kansas, USA",
-  description: "Explore the portfolio of Naveen Sai",
+  title: "Narottham K | Cloud & Application Security Engineer | USA",
+  description: "Explore the portfolio of Narottham K",
   keywords:
-    "Naveen Sai Alapati, ReactJS, Angular, Java, SpringBoot, Node.js, Javascript, Typescript, Material UI, TailwindCSS, Web Development, Portfolio, React developer, Next js developer, USA",
+    "Narottham K, Cloud Security Engineer, Application Security Engineer, AppSec, Cloud Security, AWS Security, IAM Least Privilege, GuardDuty, CloudTrail, DevSecOps, CI/CD Security, GitHub Actions, Terraform, Infrastructure as Code, SOC Analyst, Security Engineering, Threat Detection, SIEM, Splunk, Zeek, Suricata, Security Automation, Python Security, OWASP Top 10, Secure SDLC, Web Application Security, Linux Hardening, CIS Benchmarks, Cybersecurity Portfolio, USA
+",
   robots:
     "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   icons: {
