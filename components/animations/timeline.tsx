@@ -75,12 +75,37 @@ export function Timeline({ data }: { data: WorkExperience[] }) {
                 </h6>
               </div>
 
-              {breakText(item.jobDescription).map((sentence, index) => (
-                <p key={index} className="text-neutral-300 mb-2">
-                  {sentence}
-                  {sentence.endsWith(".") ? "" : "."}
-                </p>
-              ))}
+              {(() => {
+  const lines = item.jobDescription
+    .trim()
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
+
+  const paragraphs = lines.filter((l) => !l.startsWith("•"));
+  const bullets = lines
+    .filter((l) => l.startsWith("•"))
+    .map((l) => l.replace(/^•\s*/, "").trim());
+
+  return (
+    <div className="text-neutral-300">
+      {paragraphs.map((p, i) => (
+        <p key={`p-${i}`} className="mb-3 leading-relaxed">
+          {p}
+        </p>
+      ))}
+
+      {bullets.length > 0 && (
+        <ul className="mt-2 space-y-2 list-disc list-inside">
+          {bullets.map((b, i) => (
+            <li key={`b-${i}`}>{b}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+})()}
+
             </div>
           </div>
         ))}

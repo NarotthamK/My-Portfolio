@@ -20,20 +20,21 @@ export function Hero({ data }: Props) {
       <Container className="flex justify-center relative z-10 w-full">
         <div className="flex flex-col items-center justify-center w-full">
           <MotionUp delay={0}>
-            <h1 className="text-3xl  md:text-6xl text-neutral-700 dark:text-blue-100 !leading-snug text-center mx-auto font-[900]">
-              Hi, I'm Naveen Sai Alapati
-              <br />
-              <Highlight delay={1.8}>Software Engineer</Highlight>
-            </h1>
-          </MotionUp>
+  <h1 className="text-3xl md:text-5xl lg:text-5xl text-neutral-700 dark:text-blue-100 !leading-snug text-center mx-auto font-[900]">
+    Hi, I'm Narottham K
+    <br />
+    <Highlight delay={1.8}>Cloud & Application Security Engineer</Highlight>
+  </h1>
+</MotionUp>
 
-          <MotionUp delay={0.3} className="my-4">
-           <h6 className="text-center !leading-7 md:!leading-10 font-semibold text-2 lg:text-3xl max-w-xl text-blue-100">
-  Based in <span className="text-blue-200">the USA</span>,<br />
-  <span>specializing in </span>
-  <Highlight delay={1.6}>Full-Stack Development</Highlight>
-</h6>
-          </MotionUp>
+<MotionUp delay={0.3} className="my-4">
+  <h6 className="text-center !leading-7 md:!leading-10 font-semibold text-lg md:text-2xl lg:text-3xl max-w-3xl text-blue-100 mx-auto">
+    Securing <span className="text-blue-200">AWS environments</span>,{" "}
+    <span className="text-purple-300 font-bold">CI/CD pipelines</span>, and{" "}
+    <span className="text-blue-200">web applications</span>
+  </h6>
+</MotionUp>
+
 
           <MotionUp delay={0.6} className="flex items-center gap-3 mt-5">
             <MagicButton

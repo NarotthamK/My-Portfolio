@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Naveen Sai",
-    description: "Explore the portfolio of Naveen Sai",
+    title: "Narottham K",
+    description: "Explore the portfolio of Narottham K",
     images: [
       {
         url: "/og-image.webp",
-        alt: "Naveen Sai Portfolio",
+        alt: "Narottham K Portfolio",
       },
     ],
   },

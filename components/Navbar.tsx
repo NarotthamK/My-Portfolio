@@ -25,7 +25,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link href="#home" className="text-xl font-bold text-white">
-          Naveen Sai Alapati
+          Narottham K
         </Link>
 
         <div className="hidden md:flex space-x-8">

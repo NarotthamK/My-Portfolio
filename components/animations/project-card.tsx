@@ -12,28 +12,32 @@ interface Props {
 
 export function ProjectCard({ data }: Props) {
   return (
-    <PinContainer
-      title="View Project"
-      className="!w-full flex justify-center h-[330px]"
-    >
-      <div className="tracking-tight text-blue-100">
-        <Image
-          src={data.images[0] || "/fallback.jpg"} // fallback if image missing
-          alt={data.title}
-          height={300}
-          width={500}
-          className="rounded-lg h-[180px] max-w-full mb-5 object-cover"
-        />
-        <h3 className="line-clamp-1 max-w-xs !pb-2 !m-0 font-bold text-base text-blue-100">
-          {data.title}
-        </h3>
-        <div className="text-base !m-0 !p-0 font-normal">
-          <p className="text-slate-400 line-clamp-4">{data.description}</p>
+    <div className="w-full flex justify-center">
+      <PinContainer
+        title="View Project"
+        containerClassName="w-fit mx-auto"
+        className="flex justify-center h-[330px]"
+      >
+        <div className="tracking-tight text-blue-100">
+          <Image
+            src={data.images[0] || "/fallback.jpg"}
+            alt={data.title}
+            height={300}
+            width={500}
+            className="rounded-lg h-[180px] w-full mb-5 object-cover"
+          />
+          <h3 className="line-clamp-1 max-w-xs !pb-2 !m-0 font-bold text-base text-blue-100">
+            {data.title}
+          </h3>
+          <div className="text-base !m-0 !p-0 font-normal">
+            <p className="text-slate-400 line-clamp-4">{data.description}</p>
+          </div>
         </div>
-      </div>
-    </PinContainer>
+      </PinContainer>
+    </div>
   );
 }
+
 
 function PinContainer({
   children,
