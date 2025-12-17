@@ -1,9 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { Container } from "../Container";
 import { MotionUp, ProjectCard, MagicButton } from "../animations";
 import { SmallGridBackground } from "../bg-patterns";
-import { useState } from "react";
 import { Heading } from "../";
 import { Project } from "@/lib/types";
 import { sortByPriority } from "@/lib/utils";
@@ -12,40 +12,43 @@ interface Props {
   projects: Project[];
 }
 
-const INITIAL_ITEMS = 3;
+const INITIAL_ITEMS = 2; // 👈 IMPORTANT
 
 export function Projects({ projects }: Props) {
-  const [items, setItems] = useState(
-    sortByPriority(projects).slice(0, INITIAL_ITEMS)
-  );
   const [showAll, setShowAll] = useState(false);
 
-  function handleShowMore() {
-    if (!showAll) {
-      setShowAll(true);
-      setItems(projects);
-    } else {
-      setShowAll(false);
-      setItems(projects.slice(0, INITIAL_ITEMS));
-    }
-  }
+  const visibleProjects = showAll
+    ? sortByPriority(projects)
+    : sortByPriority(projects).slice(0, INITIAL_ITEMS);
 
   return (
-    <SmallGridBackground className="relative z-10 py-10" id="projects">
+    <SmallGridBackground id="projects" className="relative z-10 py-16">
       <Container>
         <MotionUp delay={0.1}>
-          <Heading text="Projects" />
 
-          {/* CENTERED GRID */}
-          <div className="mt-10 mx-auto w-full max-w-6xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
-              {items.map((project, index) => (
+          {/* CENTERED HEADING */}
+          <div className="flex justify-center">
+            <Heading text="Projects" />
+          </div>
+
+          {/* PERFECTLY CENTERED 2-CARD GRID */}
+          <div className="mt-12 flex justify-center">
+            <div
+              className="
+                grid
+                grid-cols-1
+                md:grid-cols-2
+                gap-10
+                max-w-4xl
+                place-items-center
+              "
+            >
+              {visibleProjects.map((project, index) => (
                 <a
                   key={index}
                   href={project.gitUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block"
                 >
                   <ProjectCard data={project} />
                 </a>
@@ -54,12 +57,14 @@ export function Projects({ projects }: Props) {
           </div>
 
           {projects.length > INITIAL_ITEMS && (
-            <MagicButton
-              title={showAll ? "Show Less" : "Show More"}
-              handleClick={handleShowMore}
-              className="mx-auto !block mt-12"
-            />
+            <div className="mt-14 flex justify-center">
+              <MagicButton
+                title={showAll ? "Show Less" : "Show More"}
+                handleClick={() => setShowAll(!showAll)}
+              />
+            </div>
           )}
+
         </MotionUp>
       </Container>
     </SmallGridBackground>
