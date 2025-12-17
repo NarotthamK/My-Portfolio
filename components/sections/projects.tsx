@@ -35,7 +35,7 @@ export function Projects({ projects }: Props) {
         <MotionUp delay={0.1}>
           <Heading text="Projects" />
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
             {items.map((project, index) => (
               <a
                 key={index}
