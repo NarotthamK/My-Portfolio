@@ -159,7 +159,7 @@ certificates: [
     },
     {
       title: "Google Cybersecurity Professional Certificate",
-      image: "/certificates/Google_Cybersecurity.png",
+      image: "/GCPC.png",
       url: "https://www.coursera.org/professional-certificates/google-cybersecurity",
     },
   ],
