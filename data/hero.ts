@@ -4,7 +4,7 @@ import { PersonalInfo,SocialLink } from "@/lib/types";
 
 export const heroData: PersonalInfo = {
   name: "Narottham K",
-  resume: "/Naveen Sai_SDE_ Resume.pdf", // path to resume in public folder
+  resume: "/Cloud & App Sec Resume.pdf", // path to resume in public folder
   profileImage: "/profile.webp", // path to image in public folder
   setupImage: "/setup.webp", // path to setup image
   moreInfo: `
