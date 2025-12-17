@@ -15,7 +15,9 @@ interface Props {
 const INITIAL_ITEMS = 3;
 
 export function Projects({ projects }: Props) {
-  const [items, setItems] = useState(sortByPriority(projects).slice(0, INITIAL_ITEMS));
+  const [items, setItems] = useState(
+    sortByPriority(projects).slice(0, INITIAL_ITEMS)
+  );
   const [showAll, setShowAll] = useState(false);
 
   function handleShowMore() {
@@ -29,24 +31,26 @@ export function Projects({ projects }: Props) {
   }
 
   return (
-    // ✅ Added relative + z-10 to prevent layering issues
     <SmallGridBackground className="relative z-10 py-10" id="projects">
       <Container>
         <MotionUp delay={0.1}>
           <Heading text="Projects" />
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
-            {items.map((project, index) => (
-              <a
-                key={index}
-                href={project.gitUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <ProjectCard data={project} />
-              </a>
-            ))}
+          {/* CENTERED GRID */}
+          <div className="mt-10 mx-auto w-full max-w-6xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+              {items.map((project, index) => (
+                <a
+                  key={index}
+                  href={project.gitUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <ProjectCard data={project} />
+                </a>
+              ))}
+            </div>
           </div>
 
           {projects.length > INITIAL_ITEMS && (
