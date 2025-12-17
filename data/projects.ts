@@ -6,7 +6,7 @@ export const projects: Project[] = [
     description:
       "Secured AWS cloud environments by enforcing IAM least-privilege access, hardening infrastructure, and enabling continuous threat monitoring to detect risky activity before impact.",
     gitUrl: "", // optional – add later if you want
-    images: ["/robot.png"], // keeping same image as requested
+    images: ["/AWS_project_image.png"], // keeping same image as requested
     techStack: ["AWS IAM", "GuardDuty", "CloudTrail", "Terraform"],
     priority: 1,
   },
@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description:
       "Built a SOC-style detection pipeline to ingest network telemetry, detect attacker behavior, and automate alert enrichment to reduce investigation time and improve response efficiency.",
     gitUrl: "", // optional – add later if you want
-    images: ["/AI_ImageGen.jpg"], // keeping same image as requested
+    images: ["/SOC_project_image.png"], // keeping same image as requested
     techStack: ["Splunk", "Zeek", "Suricata", "Python"],
     priority: 2,
   },
