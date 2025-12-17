@@ -24,8 +24,7 @@ export const metadata: Metadata = {
   title: "Narottham K | Cloud & Application Security Engineer | USA",
   description: "Explore the portfolio of Narottham K",
   keywords:
-    "Narottham K, Cloud Security Engineer, Application Security Engineer, AppSec, Cloud Security, AWS Security, IAM Least Privilege, GuardDuty, CloudTrail, DevSecOps, CI/CD Security, GitHub Actions, Terraform, Infrastructure as Code, SOC Analyst, Security Engineering, Threat Detection, SIEM, Splunk, Zeek, Suricata, Security Automation, Python Security, OWASP Top 10, Secure SDLC, Web Application Security, Linux Hardening, CIS Benchmarks, Cybersecurity Portfolio, USA
-",
+    "Narottham K, Cloud Security Engineer, Application Security Engineer, AppSec, Cloud Security, AWS Security, IAM Least Privilege, GuardDuty, CloudTrail, DevSecOps, CI/CD Security, GitHub Actions, Terraform, Infrastructure as Code, SOC Analyst, Security Engineering, Threat Detection, SIEM, Splunk, Zeek, Suricata, Security Automation, Python Security, OWASP Top 10, Secure SDLC, Web Application Security, Linux Hardening, CIS Benchmarks, Cybersecurity Portfolio, USA",
   robots:
     "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   icons: {
