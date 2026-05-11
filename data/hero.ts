@@ -8,13 +8,13 @@ export const heroData: PersonalInfo = {
   profileImage: "/profile.webp", // path to image in public folder
   setupImage: "/setup.webp", // path to setup image
   moreInfo: `
-My path into security started in a hands-on cybersecurity lab, not from theory alone. As a Teaching Assistant, I saw how well-written code could still be insecure, which pushed me to focus on how real systems fail—not just how they’re designed.
+My journey into cybersecurity started with a strong interest in how modern applications, APIs, and cloud systems are secured in real-world environments. Early in my career, I worked on vulnerability assessments, system security, and secure infrastructure practices, which helped me build a strong foundation in identifying and mitigating security risks across enterprise environments.
 
-That curiosity led me to work independently on security assessments, where I gained practical experience hardening Linux systems, configuring firewalls, and identifying vulnerabilities in small environments. This phase taught me how to solve security problems without predefined playbooks.
+As I gained experience, my focus shifted toward Application Security and DevSecOps, where I became increasingly interested in how security can be integrated directly into the software development lifecycle rather than treated as a separate process. This led me to work extensively with secure code reviews, API security testing, threat modeling, vulnerability remediation, and CI/CD security automation.
 
-Today, I work as a Cloud and Application Security Engineer at XsignON, where I help secure AWS environments and production applications. My work focuses on IAM least-privilege, cloud hardening, and integrating security controls into CI/CD pipelines so risks are addressed before deployment.
+Today, I work as an Application Security Engineer at XSignOn, where I help secure enterprise web applications, APIs, and cloud-native systems across AWS environments. My work involves integrating SAST, DAST, and SCA tooling into CI/CD pipelines, performing application security assessments, supporting secure development practices, and collaborating closely with engineering teams to reduce security risks before deployment.
 
-I believe effective security is built through clear design, automation, and collaboration with engineering teams—not just tools. My goal is to help build cloud-native systems that are secure by default and resilient in real-world environments.
+I enjoy working at the intersection of Application Security, Cloud Security, and DevSecOps, with a strong focus on building scalable security processes that align with modern engineering workflows. My goal is to help organizations build secure-by-design applications and resilient cloud-native platforms without slowing down development velocity.
   `.trim(),
   email:"narotthamk@gmail.com",
   workingHours:"9:00 AM - 6:00 PM",
