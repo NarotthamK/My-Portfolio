@@ -7,49 +7,55 @@ export const data: {
   skills: Skill[];
   certificates: Certificate[];
 } = {
-  workExperience: [
+    workExperience: [
     {
-      companyName: "XsignON (Client: Citi Bank)",
+      companyName: "XSignOn Corporation",
       companyLogo: "/XSignOn.png",
-      position: "Cloud & Application Security Engineer",
-      startDate: "2024-11",
+      position: "Security Engineer (Cloud & Application)",
+      startDate: "2025-02",
       jobDescription: `
-At XsignON, I work on securing cloud infrastructure and applications in enterprise financial environments.
+At XSignOn, I work on securing cloud environments, web applications, APIs, and DevSecOps workflows across modern enterprise systems.
 
-• Integrated security controls into GitHub Actions CI/CD pipelines to detect insecure code and cloud misconfigurations before production
-• Designed and enforced AWS IAM least-privilege access models to reduce excessive permissions
-• Hardened containerized workloads and cloud resources to minimize attack surfaces
-• Collaborated with development teams to remediate OWASP Top 10 vulnerabilities such as SQL injection and XSS
-• Validated remediation using application security testing tools as part of a secure SDLC
+• Led application security assessments across web applications, APIs, and microservices by performing secure code reviews, threat modeling, and vulnerability analysis
+• Integrated SAST and DAST security tools including Checkmarx, SonarQube, OWASP ZAP, and Snyk into CI/CD pipelines to support secure software delivery
+• Conducted API security testing to identify authentication flaws, injection risks, insecure configurations, and data exposure vulnerabilities
+• Implemented AWS security controls including IAM governance, least privilege access, and cloud security monitoring using AWS Security Hub and GuardDuty
+• Developed DevSecOps workflows using GitHub Actions, Jenkins, Terraform, Docker, and Checkov to strengthen deployment security and infrastructure validation
+• Partnered with engineering teams to prioritize remediation, improve secure coding practices, and reduce application security risk across production environments
       `,
     },
     {
-      companyName: "Independent / Self-Employed",
-      companyLogo: "/uber.png",
-      position: "Independent Security Analyst",
-      startDate: "2023-03",
-      endDate: "2024-10",
+      companyName: "XSignOn Corporation",
+      companyLogo: "/XSignOn.png",
+      position: "Security Engineer Intern",
+      startDate: "2024-08",
+      endDate: "2025-02",
       jobDescription: `
-Worked independently on security assessments and system hardening for small environments.
+Supported application security, cloud security, and DevSecOps activities while contributing to secure development and vulnerability remediation workflows.
 
-• Conducted vulnerability assessments using Nessus and Nmap
-• Hardened Linux and Windows systems following CIS Benchmarks
-• Implemented network security controls using UFW and iptables for asset isolation
-• Provided remediation guidance to reduce recurring security findings
+• Assisted in integrating SAST and SCA tools including SonarQube and Snyk into CI/CD pipelines for automated vulnerability detection
+• Supported secure code review, API security testing, and vulnerability analysis across internal web applications and services
+• Performed vulnerability assessments using AWS Security Hub and Nessus, helping engineering teams with triage and remediation coordination
+• Assisted with AWS IAM access reviews to identify excessive permissions and support least privilege access management
+• Contributed to infrastructure-as-code security validation using Terraform, Docker, and Checkov
+• Supported ISO 27001 and NIST compliance documentation, audit preparation, and security remediation tracking
       `,
     },
     {
-      companyName: "Vellore Institute of Technology (VIT)",
-      companyLogo: "/VIT Vellore.png",
-      position: "Teaching Assistant – Cybersecurity Lab",
-      startDate: "2022-05",
-      endDate: "2023-02",
+      companyName: "Visa",
+      companyLogo: "/Visa.png",
+      position: "Security Engineer",
+      startDate: "2021-08",
+      endDate: "2023-07",
       jobDescription: `
-Supported hands-on cybersecurity labs and helped students troubleshoot real infrastructure and networking issues.
+At Visa, I supported enterprise application security, cloud security, DevSecOps, and vulnerability management initiatives across large-scale financial technology environments.
 
-• Managed Linux and VMware-based lab environments for multiple student groups
-• Diagnosed and resolved system and network configuration issues during lab sessions
-• Guided students through packet analysis using Wireshark and access control concepts
+• Performed application security assessments across enterprise web applications and APIs through secure code review, threat modeling, and penetration testing
+• Integrated SAST and DAST security tooling including Checkmarx, SonarQube, and OWASP ZAP into CI/CD pipelines to improve automated security validation
+• Conducted web and API security testing using Burp Suite and Nessus to identify authentication flaws, injection vulnerabilities, and insecure configurations
+• Supported AWS and Azure cloud security controls including IAM governance, least privilege access, and security monitoring across production environments
+• Built DevSecOps security workflows using Jenkins, GitHub Actions, Terraform, and Checkov to strengthen CI/CD and infrastructure security controls
+• Partnered with engineering teams to remediate vulnerabilities, improve secure-by-design implementation, and support ISO 27001, NIST, and SOC 2 aligned security practices
       `,
     },
   ],
